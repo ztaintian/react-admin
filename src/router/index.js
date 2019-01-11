@@ -7,6 +7,7 @@ import Home from '../views/Home';
 import News from '../views/News';
 import ControlPanel from '../views/ControlPanel';
 import Regs from '../views/Regs';
+import Web from '../views/Web';
 // import Sign from '../views/Sign';
 
 class Routers extends Component {
@@ -19,6 +20,7 @@ class Routers extends Component {
             <Route exact path="/news" component={News} />
             <Route exact path="/ControlPanel" component={ControlPanel} />
             <Route exact path="/regs" component={Regs} />
+            <Route exact path="/web" component={Web} />
             {/* <Route exact path="/sign" component={Sign} /> */}
           </Switch>
         </Suspense>

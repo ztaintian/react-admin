@@ -10,6 +10,15 @@ class SiderLayout extends Component {
     collapsed: false,
     menuList: [
       {
+        name: '学习网站',
+        iconfont: 'question-circle',
+        children: [
+          { 
+            name: '前端学习网站',link: 'web' 
+          },
+        ]
+      },
+      {
         name: 'html问题集',
         iconfont: 'question-circle',
         children: [{ name: 'html1',link: 'news' }, { name: 'html2',link: 'news' }]
