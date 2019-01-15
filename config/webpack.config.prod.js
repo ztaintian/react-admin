@@ -53,8 +53,8 @@ const useTypeScript = fs.existsSync(paths.appTsConfig);
 // style files regexes
 const cssRegex = /\.css$/;
 const cssModuleRegex = /\.module\.css$/;
-const sassRegex = /\.(scss|sass)$/;
-const sassModuleRegex = /\.module\.(scss|sass)$/;
+const sassRegex = /\.(scss|sass|styl)$/;
+const sassModuleRegex = /\.module\.(scss|sass|styl)$/;
 
 // common function to get style loaders
 const getStyleLoaders = (cssOptions, preProcessor) => {
@@ -381,7 +381,7 @@ module.exports = {
                 importLoaders: 2,
                 sourceMap: shouldUseSourceMap,
               },
-              'sass-loader'
+              'stylus-loader'
             ),
             // Don't consider CSS imports dead code even if the
             // containing package claims to have no side effects.
@@ -400,7 +400,7 @@ module.exports = {
                 modules: true,
                 getLocalIdent: getCSSModuleLocalIdent,
               },
-              'sass-loader'
+              'stylus-loader'
             ),
           },
           // "file" loader makes sure assets end up in the `build` folder.
