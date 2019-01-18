@@ -36,7 +36,7 @@ class SiderLayout extends Component {
       {
         name: 'regex问题集',
         iconfont: 'question-circle',
-        children: [{ name: 'js正则验证人名，包含·（类似卡尔·马克思）', link: 'regs' }, { name: 'css2', link: 'news2' }]
+        children: [{ name: 'js正则验证人名，包含·（类似卡尔·马克思）', link: 'regs' }]
       },
       {
         name: 'Sign',

@@ -8,7 +8,8 @@ import News from '../views/News';
 import ControlPanel from '../views/ControlPanel';
 import Regs from '../views/Regs';
 import Web from '../views/Web';
-// import Sign from '../views/Sign';
+import Sign from '../views/Sign';
+import NoMatch from '../views/NoMatch';
 
 class Routers extends Component {
   render() {
@@ -16,12 +17,14 @@ class Routers extends Component {
       <HashRouter>
         <Suspense fallback={<div>Loading...</div>}>
           <Switch>
+            <Route exact path="/" component={Web} />
             <Route exact path="/home" component={Home} />
             <Route exact path="/news" component={News} />
             <Route exact path="/ControlPanel" component={ControlPanel} />
             <Route exact path="/regs" component={Regs} />
             <Route exact path="/web" component={Web} />
-            {/* <Route exact path="/sign" component={Sign} /> */}
+            <Route exact path="/sign" component={Sign} />
+            <Route component={NoMatch}/>
           </Switch>
         </Suspense>
       </HashRouter>
